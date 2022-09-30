@@ -1,0 +1,17 @@
+#pragma once
+
+#include <array>
+
+namespace metadata {
+
+/// The following data will be replaced by CMake setup
+constexpr const char *APP_NAME{"${MASSCALC_APP_NAME}"};
+constexpr const char *GITHUB_WEBSITE{"${MASSCALC_GITHUB_WEBSITE}"};
+constexpr std::array<std::uint32_t, 3> APP_VERSION{${MASSCALC_APP_VERSION_MAJOR}, ${MASSCALC_APP_VERSION_MINOR},
+                                                           ${MASSCALC_APP_VERSION_PATCH}};
+constexpr const char *APP_VERSION_STR{"${MASSCALC_APP_VERSION_MAJOR}.${MASSCALC_APP_VERSION_MINOR}.${MASSCALC_APP_VERSION_PATCH}"};
+
+constexpr const char *BUILD_GIT = "${MASSCALC_GIT_SHA}";
+constexpr const char *BUILD_TYPE = "${CMAKE_BUILD_TYPE}";
+
+} // masscalc::metadata

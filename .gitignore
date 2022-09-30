@@ -30,3 +30,17 @@
 *.exe
 *.out
 *.app
+
+# Logfiles
+*.log
+
+# custom ignores
+.idea/
+cmake-build-*/
+build/
+*.spv
+vma-dumps/*.json
+*.ini
+*.csv
+*__pycache__*
+
